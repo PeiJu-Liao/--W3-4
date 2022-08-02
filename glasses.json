@@ -1,0 +1,76 @@
+{
+  "glassesFrameData": [
+    {
+      "id": 1,
+      "optical_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true"
+    },
+    {
+      "id": 2,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-2.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true"
+    },
+    {
+      "id": 3,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-3.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true"
+    },
+    {
+      "id": 4,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-4.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true"
+    },
+    {
+      "id": 5,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-5.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-11.png?raw=true"
+    },
+    {
+      "id": 6,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-6.png?raw=true",
+      "sunglass_image": "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-12.png?raw=true"
+    }
+  ],
+  "storeBaseData": [
+    {
+      "id": 1,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true",
+      "store": "台北市中山旗艦店",
+      "tel": "(02)000-1234",
+      "business_hours": "10: 00-21: 00",
+      "address": "台北市中山區南京東路25巷2-1號"
+    },
+    {
+      "id": 2,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true",
+      "store": "台北綠園地",
+      "tel": "(02)000-2345",
+      "business_hours": "10: 00-21: 00",
+      "address": "台北市中正區復興南路 132-1 號"
+    },
+    {
+      "id": 3,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true",
+      "store": "台中清水旗艦店",
+      "tel": "(02)000-1234",
+      "business_hours": "10: 00-21: 00",
+      "address": "台中市清水區經南一路 23 號 8 樓"
+    },
+    {
+      "id": 4,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true",
+      "store": "高雄中正形象店",
+      "tel": "(07)000-2345",
+      "business_hours": "10: 00-21: 00",
+      "address": "高雄市苓雅區中正路 38 號 12 樓"
+    },
+    {
+      "id": 5,
+      "image": "https: //github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true",
+      "store": "高雄夢時代店",
+      "tel": "(07)000-1234",
+      "business_hours": "10: 00-21: 00",
+      "address": "高雄市前鎮區中華一路 63 號 6 樓"
+    }
+  ]
+}

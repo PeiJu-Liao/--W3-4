@@ -1,10 +1,38 @@
----
-title: page3-1
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    page3-1
+  </title>
+  <script src="https://kit.fontawesome.com/34d0923d3d.js" crossorigin="anonymous"></script>
+  <!-- meterial icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav">
+        <a href="./index.html" class="nav__logo">
+          <img src="./assets/images/logo-white.png" alt="logo">
+        </a>
+        <ul class="nav__menulist">
+          <li><a href="./page1-1-frame.html">系列鏡框</a></li>
+          <li><a href="./page2-1-store.html">門市據點</a></li>
+          <li><a href="./page3-1-blog.html">部落格</a></li>
+          <li><a href="./page4-question.html">常見問題</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
 <!-- 部落格 -->
 
 <div class="blog">
@@ -121,3 +149,54 @@ current: index
     </div>
   </div>
 </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__menus">
+            <ul class="footer__menus--menu">
+              <li class="mr-12"><a href="./index.html">首頁</a></li>
+              <li class="mr-12"><a href="./page1-1.html">系列鏡框</a></li>
+              <li class="mr-12"><a href="./page2-1.html">門市據點</a></li>
+              <li class="mr-12"><a href="./page3.html">部落格</a></li>
+              <li><a href="./page4.html">常見問題</a></li>
+            </ul>
+            <ul class="footer__menus--infos">
+              <li>
+                <a href="tel:+886-0800-000-00"><span class="material-symbols-outlined">
+                    call
+                  </span>0800-000-00</a>
+              </li>
+              <li>
+                <a href="mailto:glasses@business.com"><span class="material-symbols-outlined">
+                    mail
+                  </span>glasses@business.com</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__icons">
+            <li class="mr-8">
+              <a href="#"><img src="./assets/images/ic-social-fb.png" alt="facebook"></img></a>
+            </li>
+            <li class="mr-8">
+              <a href="#"><img src="./assets/images/ic_social_ig.png" alt="instgram"></img></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/ic_social_line.png" alt="line"></img></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__copyright">
+          <li>Copyright © 2020 Glasses.All rights reserved.
+          </li>
+          <li>隱私權政策</li>
+          <li class="ml-12">服務條款</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
