@@ -1,0 +1,35 @@
+// Google Font 載入
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+// 思源黑體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+
+// 工具設定
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+
+// 全域設定base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fontStyle';
+
+// 工具設定
+@import 'components/btn';
+@import 'components/pagination';
+
+// 版型設定
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/header';
+
+// 頁面設定:通常放一些只有這個頁面才會使用的樣式
+@import 'pages/home';
+@import 'pages/frame';
+@import 'pages/storebase';
+@import 'pages/questions';
+@import 'pages/blog';
+
+// rwd響應式網頁
+@import 'layout/rwd';

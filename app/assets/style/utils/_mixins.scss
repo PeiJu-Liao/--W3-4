@@ -1,0 +1,65 @@
+// @mixin 是產生多個樣式；
+// @extend是將樣式全部集中管理。
+
+@mixin container($max-width, $padding) {
+  max-width: $max-width;
+  padding: 0 $padding;
+  margin: 0 auto;
+}
+
+@mixin jointPic($width, $height) {
+  max-width: $width;
+  height: $height;
+}
+
+@mixin linkStyle($color) {
+
+  // any-link css會連結到任何一個帶有href屬性的元素
+  & li a:any-link {
+    color: $color;
+  }
+}
+
+@mixin sectionPadding($p-top, $p-bottom) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+%linkHover {
+  & li a:hover {
+    text-decoration: underline;
+  }
+}
+
+//複寫繼承
+%flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%inpuStlye {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: $color-secondary;
+  width: 100%;
+}
+
+%paginationTitle {
+  margin-top: 6rem;
+  text-align: left;
+  position: relative;
+  padding-left: 1rem;
+
+  &::before {
+    content: '';
+    background-color: $color-primary;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 4.5rem;
+  }
+}

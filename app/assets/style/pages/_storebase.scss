@@ -1,0 +1,87 @@
+.storebase {
+  margin-bottom: 5rem;
+
+  &__wrapper {
+    margin: 0 -0.75rem;
+  }
+
+  h1 {
+    @extend %paginationTitle;
+  }
+
+  // 下拉選單
+  &__select {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    &-wrapper {
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: "\25BE";
+        position: absolute;
+        top: 50%;
+        right: 1.1875rem;
+        transform: translateY(-50%);
+      }
+    }
+
+    select {
+      font-size: 1.125rem;
+      line-height: 1.5;
+      min-width: 19rem;
+      padding: 0.375rem 0;
+      padding-left: 0.75rem;
+      border: 1px solid $color-select-border;
+      color: $color-select-font;
+      -webkit-appearance: none;
+    }
+  }
+
+  // 門市據點
+  &__cardWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+    grid-gap: 3rem 1.5rem;
+  }
+
+  &__cardFooter,
+  &__detailsCardFooter {
+    @include linkStyle($color-black);
+    @extend %linkHover;
+    font-size: 1.25rem;
+    border: 1px solid $color-storebase-cardborder;
+
+    h2 {
+      border-bottom: 1px solid $color-storebase-cardborder;
+      font-size: 1.5rem;
+    }
+
+    &--detail {
+      background-color: $color-black;
+      text-align: center;
+      @include linkStyle($color-white);
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  // 門市資訊
+  &__detailsWrapper {
+    margin: 0 -0.75rem;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__detailsCard {
+    max-width: 40%;
+  }
+}

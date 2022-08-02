@@ -1,0 +1,16 @@
+.header {
+  background: url('../images/home-header.png') center / cover;
+  height: calc(100vh - 5rem);
+
+  .container {
+    height: 100%;
+  }
+
+  &__banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

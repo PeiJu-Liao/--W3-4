@@ -1,0 +1,109 @@
+.glassesFrame {
+
+  &__menu {
+    margin: 0 -0.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid $color-border;
+    @include linkStyle($color-black);
+
+    li {
+      width: 100%;
+      text-align: center;
+    }
+
+    li:not(:last-child) {
+      border-right: 1px solid $color-border;
+    }
+
+    li:hover,
+    li.active {
+
+      & {
+        position: relative;
+      }
+
+      &::before {
+        content: '';
+        height: 0.5rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+
+    &-pic1 {
+      background: url('../images/product-header-1.png') center / cover;
+      height: 18.5rem;
+      width: 60rem;
+    }
+
+    &-pic2 {
+      background: url('../images/product-header-2.png') center/cover;
+      height: 18.5rem;
+      width: 60rem;
+    }
+
+    &-pic3 {
+      background: url('../images/product-header-3.png') center/cover;
+      height: 18.5rem;
+      width: 60rem;
+    }
+
+    &-pic4 {
+      background: url('../images/product-header-4.png') center/cover;
+      height: 18.5rem;
+      width: 60rem;
+    }
+  }
+
+  &__content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 0 -0.75rem;
+  }
+
+  &__opticalWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19.125rem, 1fr));
+    grid-gap: 5rem 1.5rem; //y軸 、 x軸
+  }
+
+  &__sunglassWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+    grid-gap: 5rem 1.5rem; //y軸 、 x軸
+  }
+
+  &__cardFooter {
+    &--info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+
+      p:last-child {
+        color: $color-primary;
+        font-weight: 500;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: $color-style-darkBrown;
+
+      &:last-child {
+        background-color: $color-style-lightBrown;
+      }
+    }
+  }
+}

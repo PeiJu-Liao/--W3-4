@@ -1,0 +1,464 @@
+@media (max-width: $landscape) {
+  .container {
+    @include container(768px, 0.75rem);
+  }
+
+  .sectionClassic {
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 100%;
+
+      img {
+        max-width: 21rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .sectionJoint {
+    &__joint {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 1.15rem;
+      }
+
+      .joint-pic-1,
+      .joint-pic-2 {
+        @include jointPic(100%, 15rem)
+      }
+    }
+  }
+
+  .sectionContact {
+    &__form {
+      max-width: $form-max-width-tablet;
+    }
+  }
+
+  .footer {
+    &__menus {
+      &--menu {
+        height: 2.5rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    &__icons {
+      & li a img {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  // 眼鏡框架
+  .glassesFrame {
+    &__opticalWrap {
+      grid-gap: 1.5rem 1.5rem; //y軸 、 x軸
+    }
+
+    &__sunglassWrap {
+      grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    }
+
+    &__banner {
+
+      &-pic1,
+      &-pic2,
+      &-pic3,
+      &-pic4 {
+        height: 11.75rem;
+      }
+    }
+  }
+
+  // 門市據點/門市資訊
+  .storebase {
+    &__details {
+      flex-direction: column;
+
+      &-map {
+        width: 100%;
+      }
+    }
+
+    &__detailsCard {
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      img {
+        width: 49%;
+      }
+    }
+
+    &__detailsCardFooter {
+      width: 49%;
+    }
+  }
+
+  // 部落格
+  .blog {
+    &__article {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h2+div {
+        font-size: 1rem;
+      }
+
+      &--info {
+        font-size: 1rem;
+      }
+
+      &--more {
+        display: none;
+      }
+    }
+
+    &__articles {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .specialBlog {
+    &__sideBar {
+      flex: 0 0 9rem;
+    }
+
+    &__tag {
+      li span {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $ipad) {
+  .container {
+    @include container(696px, 0.75rem)
+  }
+
+  .heading-primary {
+    &--main {
+      font-size: 3rem;
+    }
+
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+
+  nav {
+    height: 11rem;
+
+    .container {
+      @include container(100%, 0)
+    }
+
+    .nav {
+      flex-direction: column;
+      justify-content: center;
+
+      &__menulist {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 2.875rem;
+        width: 100%;
+
+        & li {
+          text-align: center;
+          margin-right: 0;
+          width: 50%;
+          border: 1px solid $color-white;
+        }
+
+        & li:not(:last-child) {
+          margin-right: 0;
+        }
+
+        & li:hover {
+          background-color: $color-third;
+        }
+      }
+    }
+  }
+
+  .sectionAbout {
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 50%;
+    }
+  }
+
+  .sectionClassic {
+    &__card {
+      img {
+        width: 21.75rem;
+      }
+    }
+  }
+
+  .sectionCustomer {
+    &__rec {
+      flex-wrap: wrap;
+    }
+
+    &__cardWrap {
+      width: 50%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer {
+    @include sectionPadding(1.5rem, 1.5rem);
+
+    &__menus {
+      &--menu {
+        li:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      &--infos {
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__icons {
+      & li a img {
+        width: 1.5rem;
+      }
+    }
+
+    &__copyright {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 1rem;
+
+      li {
+        margin-right: auto;
+        margin-left: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // 眼鏡框架
+  .heading-tertiary--sub {
+    font-size: 1rem;
+  }
+
+  .glassesFrame {
+    &__banner {
+
+      &-pic1,
+      &-pic2,
+      &-pic3,
+      &-pic4 {
+        height: 8.5rem;
+      }
+    }
+  }
+
+  // 門市據點/門市資訊
+  .storebase {
+    &__cardWrap {
+      grid-template-columns: repeat(auto-fill, minmax(21.75rem, 1fr));
+    }
+
+    &__detailsCard {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__detailsCardFooter {
+      width: 100%;
+    }
+
+    // 下拉選單
+    &__select {
+      font-size: 1rem;
+
+      &-wrapper {
+        margin-left: 0.5rem;
+      }
+
+      select {
+        min-width: 15rem;
+      }
+    }
+  }
+
+  // 部落格
+  .blog {
+    &__menu {
+      &--search {
+        display: none;
+      }
+    }
+
+    &__articles {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .specialBlog {
+    &__sideBar {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $smartphone) {
+  .container {
+    @include container(348px, 0.875rem)
+  }
+
+  .sectionAbout,
+  .sectionClassic,
+  .sectionJoint,
+  .sectionCustomer,
+  .sectionContact {
+    @include sectionPadding(2.5rem, 2.5rem);
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .header {
+    height: 24.75rem;
+
+    .heading-primary {
+      &--main {
+        font-size: 1.5rem;
+      }
+
+      &--sub {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // h2標題大小
+  .title-sm {
+    font-size: 1.5rem;
+  }
+
+  .sectionAbout {
+    &__card {
+      width: 100%;
+    }
+  }
+
+  .sectionCustomer {
+    &__cardWrap {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__cardWrap:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer {
+    &__menus {
+      &--menu {
+        display: none;
+      }
+
+      &--infos {
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+
+        li {
+          font-size: 1rem;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    &__icons {
+      li:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  // 鏡框RWD
+  .glassesFrame {
+    &__content {
+      margin: 0 -0.875rem;
+    }
+  }
+
+  // 部落格
+  .blog {
+    &__menu {
+      &--list {
+        font-size: 1rem;
+
+        li:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &__article {
+      flex-direction: column;
+
+      &--info {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &--details {
+        width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .specialBlog {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  // 分頁
+  .pagination {
+    width: 21rem;
+    font-size: 0.5rem;
+  }
+}

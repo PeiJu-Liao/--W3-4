@@ -1,0 +1,31 @@
+nav {
+  background-color: $color-primary;
+  color: $color-white;
+  height: 5rem;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    &__logo {
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__menulist {
+      display: flex;
+      @include linkStyle($color-white);
+      @extend %linkHover;
+      line-height: 5rem;
+      font-size: 1.25rem;
+
+      & li:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
