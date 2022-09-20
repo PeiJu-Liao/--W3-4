@@ -1,6 +1,8 @@
 # 網頁切版直播班 Gulp 範例
 
-> 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
+> 點擊[Click Me](https://peiju-liao.github.io/Sunglasses-Website-W3-W4/index.html)查看眼鏡形像官網
+
+- 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
 
 ## 指令列表
 
